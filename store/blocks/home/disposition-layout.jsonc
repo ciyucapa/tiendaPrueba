@@ -1,0 +1,23 @@
+{
+  "disposition-layout": {
+    "title": "prueba/disposition",
+    "children": [
+      "rich-text#question",
+      "flex-layout.row#animacion",
+      "rich-text#link"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  }
+}

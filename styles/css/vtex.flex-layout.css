@@ -92,3 +92,19 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRowContent--pruebaImagen {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+
+  overflow-x: scroll;
+  scroll-behavior: auto;
+}
+
+
+.flexRowContent--pruebaImagen::-webkit-scrollbar {
+  display: none;
+  }

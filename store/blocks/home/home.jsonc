@@ -9,10 +9,58 @@
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "disposition-layout"
     ]
+  },
+
+  "list-context.product-list#nuevo": {
+    "title": "vitrina personalizada prueba exito",
+    "blocks": ["product-summary.shelf#prueba1"],
+    "children": ["slider-layout#prueba1"]
+  },
+
+  "slider-layout#prueba1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "product-summary.shelf#prueba1": {
+    "children": [
+      "flex-layout.row#prueba"
+    ]
+},
+
+  "flex-layout.row#prueba" :{
+    "children": [
+      "flex-layout.col#prueba1",
+      "flex-layout.col#prueba2"
+    ]
+  },
+
+  "flex-layout.col#prueba1": {
+    "children": [
+      "product-summary-image"],
+    "props": {
+      "marginRight": "6"
+    }
+  },
+
+  "flex-layout.col#prueba2": {
+    "children": [
+      "product-summary-name",
+        "product-summary-space",
+        "product-summary-price",
+        "product-summary-buy-button"
+    ],
+    "props": {
+      "marginRight": "6"
+    }
   },
 
   "list-context.image-list#demo": {
@@ -54,6 +102,7 @@
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
+    "title": "context demo",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
@@ -91,6 +140,40 @@
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
+    }
+  },
+
+  "flex-layout.row#animacion":{
+    "title": "scroll imagen",
+    "children": [
+      "link#prueba",
+      "link#prueba",
+      "link#prueba",
+      "link#prueba",
+      "link#prueba",
+      "link#prueba"
+    ],
+    "props": {
+      "blockClass": "pruebaImagen"
+    }
+
+  },
+
+  "link#prueba": {
+    "title": "linkPrueba",
+    "props": {
+      "href": "/login?returnUrl={queryString.returnUrl}",
+      "label": "Editable?"
+    },
+    "children":["image#example"]
+  },
+
+  "image#example": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "maxHeight": 100,
+      "maxWidth": 100,
+      "blockClass": "pruebaImage"
     }
   },
 
